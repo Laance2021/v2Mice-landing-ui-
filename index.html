@@ -59,8 +59,14 @@ Hybrid Event management company
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"
+      integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./assets/style/main.css" />
-   
   </head>
   <body>
     <!-- Navbar Section -->
@@ -115,7 +121,7 @@ Hybrid Event management company
       </div>
       <div class="mt-5 mt-md-0 col-12 col-md-6 px-md-5">
         <h3 class="title-2 mb-4">GET FREE DEMO</h3>
-        <form class="row g-3 mx-1">
+        <form class="row g-3 mx-1" id="contact-form">
           <div class="col-12">
             <!-- <label for="name" class="form-label">Full Name</label> -->
             <input
@@ -137,9 +143,9 @@ Hybrid Event management company
           <div class="col-12">
             <!-- <label for="number" class="form-label">Mobile Number</label> -->
             <input
-              type="text"
+              type="tel"
               class="form-control"
-              id="number"
+              id="phone"
               placeholder="Mobile Number"
             />
           </div>
@@ -155,14 +161,14 @@ Hybrid Event management company
           <div class="col-12">
             <!-- <label for="exampleFormControlTextarea1" class="form-label"
               >Example textarea</label
-            > -->
-            <textarea
+              > -->
+              <textarea
               class="form-control"
-              id="exampleFormControlTextarea1"
+              id="message"
               rows="3"
               placeholder="Requirement"
-            ></textarea>
-          </div>
+              ></textarea>
+            </div>
           <div class="col-12 mb-3">
             <!-- <label for="country" class="form-label">Country</label> -->
             <select id="country" class="form-select">
@@ -463,30 +469,17 @@ Hybrid Event management company
             </select>
           </div>
           <div class="col-12">
-            <button type="submit" class="btn text-white" style="background-color: #0b4995 !important;">Submit</button>
+            <p class="alert"><i class="fa-solid fa-circle-check"></i> Submitted</p>
+            <button
+              type="submit"
+              class="btn text-white"
+              style="background-color: #0b4995 !important"
+            >
+              Submit
+            </button>
           </div>
         </form>
       </div>
-    </div>
-
-    <!-- Pomo Section -->
-
-    <div class="container-md text-center my-5 py-5">
-      <h2
-        class="title"
-        style="
-          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          letter-spacing: 1.1px;
-        "
-      >
-        We are topping it up for You by giving your 1st 50 person Event in DIY
-        for FREE
-      </h2>
-      <hr />
-      <h4 class="title-2">
-        Now doesn't that interest you to ACT Upon ASAP? CALL US NOW...... to
-        know HOW !!
-      </h4>
     </div>
 
     <!-- Our Feature Section -->
@@ -550,6 +543,26 @@ Hybrid Event management company
       </div>
     </div>
 
+     <!-- Pomo Section -->
+    
+     <div class="container-md text-center my-5 py-5">
+      <h2
+        class="title"
+        style="
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          letter-spacing: 1.1px;
+        "
+      >
+        We are topping it up for You by giving your 1st 50 person Event in DIY
+        for FREE
+      </h2>
+      <hr />
+      <h4 class="title-2">
+        Now doesn't that interest you to ACT Upon ASAP? CALL US NOW...... to
+        know HOW !!
+      </h4>
+    </div>
+
     <!-- Contact Our Team -->
 
     <footer class="text-center">
@@ -563,7 +576,9 @@ Hybrid Event management company
         <p class="col-12 col-md-6 text-start my-2 text-white">
           Copyright © <span id="year"></span> BizConnect - All Rights Reserved
         </p>
-        <ul class="list-group d-flex flex-row border-0 col-12 col-md-6 justify-content-md-end">
+        <ul
+          class="list-group d-flex flex-row border-0 col-12 col-md-6 justify-content-md-end"
+        >
           <li class="list-group-item border-0 bg-transparent text-white">
             <a
               class="text-decoration-none text-white fs-5"
@@ -613,8 +628,25 @@ Hybrid Event management company
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Phone Number flag -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"
+      integrity="sha512-+gShyB8GWoOiXNwOlBaYXdLTiZt10Iy6xjACGadpqMs20aJOoh+PJt3bwUVA6Cefe7yF7vblX6QwyXZiVwTWGg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    
+    <!-- custom -->
     <script>
-      document.getElementById('year').innerText = new Date().getFullYear()
+      document.getElementById("year").innerText = new Date().getFullYear();
     </script>
+    <script type="module" src="/assets/js/contact.js"></script>
   </body>
 </html>
