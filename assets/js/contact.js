@@ -16,7 +16,6 @@ function submitForm(e) {
   var email = getInputVal('email');
   var phone = iti.getNumber('phone');
   var company = getInputVal('company');
-  var country = getInputVal('country');
   var message = getInputVal('message');
 
   var myHeaders = new Headers();
@@ -52,10 +51,6 @@ function submitForm(e) {
     <tr>
       <td style="border: 1px solid #ddd;padding: 8px;font-weight:bold;width:30%">Company Name</td>
       <td style="border: 1px solid #ddd;padding: 8px;">${company}</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd;padding: 8px;font-weight:bold;width:30%">City</td>
-      <td style="border: 1px solid #ddd;padding: 8px;">${country}</td>
     </tr>
     <tr>
       <td style="border: 1px solid #ddd;padding: 8px;font-weight:bold;width:30%">Message</td>
