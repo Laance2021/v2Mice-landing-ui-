@@ -1,0 +1,56 @@
+@import url(//fonts.googleapis.com/css?family=Coda:regular,800|Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Oswald:200,300,regular,500,600,700|Roboto:regular,100,100italic,300,300italic,italic,500,500italic,700,700italic,900,900italic&subset=latin);
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    user-select: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.hero-video{
+    aspect-ratio: 16 / 9 !important; 
+}
+.title{
+    color: #0b4995;
+    font-family: 'Oswald', sans-serif;
+}
+.title-2{
+    color: #f47236;
+    font-family: 'Oswald', sans-serif;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("/assets/img/parallax.avif");
+  
+    /* Set a specific height */
+    min-height: 300px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+}
+.parallax-2{
+    /* The image used */
+    background-image: url("https://images.unsplash.com/photo-1519750157634-b6d493a0f77c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+  
+    /* Set a specific height */
+    min-height: 300px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+}
+
+@media (min-width:600px){
+    .hero-video{
+        aspect-ratio: 16 /7 !important; 
+       }
+}
