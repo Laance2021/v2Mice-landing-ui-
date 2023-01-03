@@ -7,8 +7,9 @@ body {
   user-select: none;
   font-family: "Oswald", sans-serif;
 }
+
 .hero-video {
-  aspect-ratio: 16 / 9 !important;
+  aspect-ratio: 21 / 9 !important;
 }
 .title {
   color: #0b4995;
