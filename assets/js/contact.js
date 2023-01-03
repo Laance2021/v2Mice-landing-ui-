@@ -14,7 +14,8 @@ function submitForm(e) {
   // Get values
   var firstname = getInputVal('name');
   var email = getInputVal('email');
-  var phone = iti.getNumber('phone');
+  var phone = iti.getNumber(intlTelInputUtils.numberFormat.E164);
+  console.log(phone)
   var company = getInputVal('company');
   var message = getInputVal('message');
 
