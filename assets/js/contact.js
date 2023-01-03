@@ -59,7 +59,7 @@ function submitForm(e) {
     </tr>
     <tr>
       <td style="border: 1px solid #ddd;padding: 8px;font-weight:bold;width:30%">Site</td>
-      <td style="border: 1px solid #ddd;padding: 8px;"><a href='https://bizconnect.space/'>BizConnect Events - MICE Landing Page</a></td>
+      <td style="border: 1px solid #ddd;padding: 8px;"><a href='https://vho.bizconnectevents.com/MICE_landing/index.html'>BizConnect Events - MICE Landing Page</a></td>
     </tr>
   </table>
   
